@@ -4,11 +4,14 @@ class Solution {
         if (n == 0) return;
         k%=n;
         if(k==0)return;
-        reverse(nums,0,n-1);
-        reverse(nums,0,k-1);
-        reverse(nums,k,n-1);
+        // reverse(nums,0,n-1);
+        // reverse(nums,0,k-1);
+        // reverse(nums,k,n-1);
+        reverse(nums, 0, n - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, n - 1);
         }
-    public void reverse(int[] num,int start,int end){
+    private void reverse(int[] num,int start,int end){
             while(start < end){
                 
                 int temp = num[start];
@@ -21,3 +24,4 @@ class Solution {
         }   
         
 }
+
