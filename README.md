@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/Mohammadosama55/https-github.com-Mohammadosama55-Leetcode/tree/master/0027-remove-element) |
 | [0053-maximum-subarray](https://github.com/Mohammadosama55/https-github.com-Mohammadosama55-Leetcode/tree/master/0053-maximum-subarray) |
 | [0189-rotate-array](https://github.com/Mohammadosama55/https-github.com-Mohammadosama55-Leetcode/tree/master/0189-rotate-array) |
 ## Divide and Conquer
@@ -23,5 +24,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/Mohammadosama55/https-github.com-Mohammadosama55-Leetcode/tree/master/0027-remove-element) |
 | [0189-rotate-array](https://github.com/Mohammadosama55/https-github.com-Mohammadosama55-Leetcode/tree/master/0189-rotate-array) |
 <!---LeetCode Topics End-->
