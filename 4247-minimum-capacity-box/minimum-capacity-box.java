@@ -15,19 +15,7 @@ class Solution {
 
         return index;
     }}
-//     int index = -1;
-//         int min = Integer.MAX_VALUE; // Start with maximum value
 
-//         for (int i = 0; i < capacity.length; i++) {
-//             if (capacity[i] >= itemSize && capacity[i] < min) {
-//                 min = capacity[i];
-//                 index = i;
-//             }
-//         }
-
-//         return index;
-//     }
-// }
 
 
 
