@@ -1,18 +1,14 @@
 class Solution {
     public int majorityElement(int[] nums) {
-        int condidate=0;
-        int count=0;
+        int n=nums.length;
+        Map<Integer,Integer> hs=new HashMap<>();
         for(int num:nums){
-            if(count==0){
-                condidate=num;
-            }
-            if(num==condidate){
-                count++;
-            }else{
-                count--;
+            hs.put(num,hs.getOrDefault(num,0)+1);
+            if(hs.get(num)>n/2){
+                return num;
             }
         }
-
-        return condidate;
+        return -1;
+        
     }
 }
