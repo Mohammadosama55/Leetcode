@@ -14,9 +14,7 @@ class Solution {
             return ;
         }
         for(int i=start;i<nums.length;i++){
-            if (nums[i] > t) {
-                continue; 
-            }
+           
             cur.add(nums[i]);
              backtracking(nums,t-nums[i],cur,i,result);
             cur.remove(cur.size()-1);
