@@ -10,42 +10,26 @@
  */
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
-        if (head == null || head.next == null || k == 0) {
+        if(head ==null ||head.next==null || k==0){
             return head;
         }
-        
-        // Step 1: Find length
-        ListNode curr = head;
-        int length = 0;
-        while (curr != null) {
-            length++;
-            curr = curr.next;
+        int lenght=1;
+        ListNode tail=head;
+        while(tail.next!=null){
+            lenght++;
+            tail=tail.next;
         }
+        k=k%lenght;
+        if(k==0)return head;
+        tail.next=head;
         
-        // Optimize k
-        k = k % length;
-        if (k == 0) return head;
-        
-        // Step 2: Use two pointers to find the split point
-        ListNode fast = head;
-        ListNode slow = head;
-        
-        // Move fast pointer k steps ahead
-        for (int i = 0; i < k; i++) {
-            fast = fast.next;
+        int stop=lenght-k;
+        ListNode front=head;
+        for(int i=1;i<stop;i++){
+            front=front.next;
         }
-        
-        // Move both pointers until fast reaches the end
-        while (fast.next != null) {
-            slow = slow.next;
-            fast = fast.next;
-        }
-        
-        // Now slow is at the new tail, fast at the old tail
-        ListNode newHead = slow.next;
-        slow.next = null;
-        fast.next = head;
-        
+        ListNode newHead=front.next;
+        front.next=null;
         return newHead;
     }
 }
